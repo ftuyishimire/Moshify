@@ -6,6 +6,7 @@
     --color-headings: #1b0760;
     --color-body: #918ca4;
     --color-border:#ccc;
+    --border-radius:30px;
 }
 
 *, *::after, *::before{
@@ -230,7 +231,7 @@ a{
 /* inputs */
 
 .input{
-    border-radius: 40px;
+    border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
     color: var(--color-headings);
     font-size: 2rem;
@@ -242,8 +243,24 @@ a{
     color: #cdcbd7;
 }
 
+/* as div is block level element that's why it took the whole page from the index.html check the result. */
+
 .input-group{
     border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+/* using nesting to remove the border for the input. it is used when the children has the border.*/
+.input-group .input{
+    border: 0;
+    /* the following codes will make an input to grow and take up all the available space */
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn{
+    margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
