@@ -205,6 +205,8 @@ a{
     margin: 1rem 0;
 }
 
+
+
 .btn--primary{
     background-color: var(--color-primary);
     color: #fff;
@@ -231,6 +233,11 @@ a{
 .btn--accent:hover{
     background: #ec3000;
     /* background: lighten(accent, 80%); */
+}
+
+.btn--streched{
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .btn--block{
@@ -493,6 +500,54 @@ a{
 
     .testimonial .quote{
         margin-left: 6rem;
+    }
+    
+}
+
+/* collouts */
+.collout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.collout--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.collout__heading{
+    color: #fff;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+
+/* btn in collout components */
+.collout .btn{
+    /* instead of applying justify-items which we use for the grid, we use justify-self as property we apply to a grid item. horizontaly */
+    justify-self: center;
+    /* for a  vertical instead of setting align-item, we use property align-self to center. */
+    align-self: center;
+}
+
+.collout__content{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .collout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+
+    .collout__content{
+        text-align: left;
+    }
+
+    .collout .btn{
+        justify-self: start;
+        margin: 0 2rem;
     }
     
 }
