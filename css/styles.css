@@ -590,3 +590,40 @@ a{
     max-height: 100vh; /* Allows the content to expand to a maximum height */
     opacity: 1; /* Sets opacity to 1 to make the content fully visible */
 }
+
+
+/* Blocks styles */
+
+.block{
+    /* --padding-vertical is available to all content of the blocks and the child. */
+    --padding-vertical:6rem;
+    padding: var(--padding-vertical) 2rem;
+    /* border: 2px solid red; */
+}
+
+.block__header {
+    text-align: center;
+}
+.block__heading{
+    margin-top: 0;
+}
+
+.block--dark{
+    background-color: #000;
+    color: #fff;
+}
+
+.block--dark .block__heading{
+    color: #fff;
+}
+
+.block--skewed-right{
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    /* the following design is made from #nte address https://bennettfeely.com/clippy/ */
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
