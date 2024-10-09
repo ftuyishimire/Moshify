@@ -204,6 +204,7 @@ a{
     cursor: pointer;
     white-space: nowrap;
     margin: 1rem 0;
+    outline: 0;
 }
 
 .btn .icon{
@@ -266,6 +267,7 @@ a{
     border: 1px solid var(--color-border);
     color: var(--color-headings);
     font-size: 2rem;
+    /* outline prevent the show of the border to the input when it is clicked */
     outline: 0;
     padding: 1.5rem 2rem;
 }
@@ -287,11 +289,12 @@ a{
     border: 0;
     /* the following codes will make an input to grow and take up all the available space */
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .input-group .btn{
     margin: 4px;
+    border: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -733,3 +736,28 @@ a{
    
 }
 
+/* Block domain */
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 750px;
+}
+
+.block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* for the list not to be much closer to each other we have to set some size. */
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 850px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .block-domain__prices{
+        grid-template-columns: repeat( auto-fit, minmax(10rem, 1fr));
+    }
+    
+}
