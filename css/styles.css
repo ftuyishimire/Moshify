@@ -201,7 +201,8 @@ a{
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2rem 3rem;
+    /* instead of using 3rem for a horizontal padding,  we can use percentage of the view port width */
+    padding: 2rem 4vw;
     /* border: 0; */
     background: #fff;
     border-radius: 40px;
@@ -295,6 +296,7 @@ a{
     /* the following codes will make an input to grow and take up all the available space */
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn{
@@ -770,8 +772,9 @@ a{
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* for the list not to be much closer to each other we have to set some size. */
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;

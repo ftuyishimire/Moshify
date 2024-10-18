@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Are you a student in final year of studies and you looking for topics for your disertation? don't worry"
+    />
+    <meta
+      property="og:title"
+      content="Backendsupport - Quick innovation and success system"
+    />
+    <meta property="og:image" content="images/backendlogos" />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:url"
+      content="https://github.com/ftuyishimire/Moshify.git"
+    />
+    <title>Backendsupport - Get A Final Year Project Idea For Easy Way</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,11 +26,338 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- adding javascript code for animation from AOS animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <!-- section header -->
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"
+          ><img src="images/backendlogo.png" alt=""
+        /></a>
+        <svg class="icon icon--primary nav__toogler">
+          <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPS</a></li>
+          <li class="nav__item"><a href="#">DOMAIN</a></li>
+          <li class="nav__item"><a href="#">PRICING</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content" data-aos="fade-right">
+          <h1 class="block__heading">teachMe hUB</h1>
+          <h3>Bringing Your Ideas To Reality</h3>
+          <p class="hero__tagline">
+            We are dedicated to transforming innovative ideas into real-life
+            designs.
+          </p>
+          <a href="" class="btn btn--accent btn--streched hero__btn"
+            >Get Started</a
+          >
+        </header>
+        <img
+          data-aos="zoom-in"
+          class="hero__image"
+          src="images/backendlogos.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- domain block -->
+    <section class="block container block-domain" data-aos="zoom-in">
+      <header class="block__header">
+        <h2>Final Year Disertation</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+          odio itaque, laboriosam repudiandae et fugiat.
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Find the project here..."
+        />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          search
+        </button>
+      </div>
+      <!-- block-domain__prices means the class inside the block class. -->
+      <ul class="list block-domain__prices">
+        <li>
+          <span class="badge badge--secondary">Setup $8</span>
+        </li>
+        <li>Ideas $8</li>
+        <li>Project $35</li>
+        <li>Mock up $50</li>
+        <li>Book $35</li>
+        <li>Mentor $20</li>
+      </ul>
+    </section>
+    <!-- Plan Block -->
+    <section class="block container block-plans">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <!-- the reason for using under score for class name card__header is because the header is the element inside this block, so it can not exist on it's own outside of this block or outside of this component. -->
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-circle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud.</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Website</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <!-- the reason for using under score for class name card__header is because the header is the element inside this block, so it can not exist on it's own outside of this block or outside of this component. -->
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-circle">/month</span>
+              <span class="badge badge--primary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud.</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Website</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <!-- the reason for using under score for class name card__header is because the header is the element inside this block, so it can not exist on it's own outside of this block or outside of this component. -->
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-circle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud.</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Website</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Block -->
+    <div class="block container">
+      <header class="block__header">
+        <h2>We are striving to be holistically impowered community</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+          officia libero numquam. In non impedit est. Asperiores quod veniam
+          est!
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+              <use xlink:href="images/sprite.svg#settings"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to use</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            fuga sint ea rem porro natus!
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <img
+          data-aos="zoom-in-left"
+          class="feature__image"
+          src="images/easy.webp"
+          alt=""
+        />
+      </article>
+
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+              <use xlink:href="images/sprite.svg#settings"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to use</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            fuga sint ea rem porro natus!
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <img class="feature__image" src="images/easy.webp" alt="" />
+      </article>
+    </div>
+    <!-- showcase block -->
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2>User Friendly Panel</h2>
+        <div class="container grid grid--1x2">
+          <picture class="block-showcase__image" data-aos="zoom-in-left">
+            <source
+              type="webp"
+              srcset="images/banner@2x.webp 1x, images/banner@3x.webp 2x"
+            />
+            <source
+              type="jpg"
+              srcset="images/banner@2x.jpg 1x, images/banner@3x.jpg 2x"
+            />
+            <img src="images/banner.jpg" alt="" />
+          </picture>
+          <ul class="list" data-aos="fade-up">
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+                    <use xlink:href="images/sprite.svg#settings"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Easy start & Managed Updates</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam, aliquid? Ea suscipit dicta, aspernatur
+                    praesentium itaque nostrum quisquam, officiis iure autem
+                    eligendi nesciunt et cupiditate!
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+                    <use xlink:href="images/sprite.svg#settings"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Easy start & Managed Updates</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam, aliquid? Ea suscipit dicta, aspernatur
+                    praesentium itaque nostrum quisquam, officiis iure autem
+                    eligendi nesciunt et cupiditate!
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+                    <use xlink:href="images/sprite.svg#settings"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Easy start & Managed Updates</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam, aliquid? Ea suscipit dicta, aspernatur
+                    praesentium itaque nostrum quisquam, officiis iure autem
+                    eligendi nesciunt et cupiditate!
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </section>
+    <!-- Testimonial block -->
+    <section class="block">
+      <header class="block__header">
+        <h2>What the customers says</h2>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img
+                src="images/testimonial.png"
+                alt="a person sitting outside the"
+              />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon-small">
+                  <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+                  <use xlink:href="images/sprite.svg#quote"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="Quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Placeat laborum hic aut rem nesciunt alias cumque quis provident
+                molestiae quod!
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+                    <img
+                      class="icon icon--primary quote__line"
+                      src="images/line.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">Fablo Wagana</h3>
+                    <p class="quote__organization">
+                      Backendsupport Student club
+                    </p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
