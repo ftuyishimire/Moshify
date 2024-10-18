@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>Final Year Disertation</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+          odio itaque, laboriosam repudiandae et fugiat.
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Find the project here..."
+        />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <!-- adding location for loading icon from our svg files. images/sprite.svg -->
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          search
+        </button>
+      </div>
+      <!-- block-domain__prices means the class inside the block class. -->
+      <ul class="list block-domain__prices">
+        <li>
+          <span class="badge badge--secondary">Setup $8</span>
+        </li>
+        <li>Ideas $8</li>
+        <li>Project $35</li>
+        <li>Mock up $50</li>
+        <li>Book $35</li>
+        <li>Mentor $20</li>
+      </ul>
+    </section>
+  </body>
+</html>
