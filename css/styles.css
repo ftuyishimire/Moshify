@@ -836,3 +836,74 @@ a{
         max-width: 700px;
     }
 }
+
+/* footer */
+.footer {
+    background: #232323;
+}
+.footer__section {
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+.footer__heading {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer__brand img{
+    /* TO DO: CONSIDER REFACTORING THIS AND APPLYING IT TO ALL IMAGES*/
+    /* width: 100%; for being responsive resized */
+    width: 100%;
+    max-width: 100px;
+}
+.footer__brand {
+    margin-top: 5rem;
+    text-align: center;
+}
+.footer__copyright{
+    font-size: 2.1rem;
+    color: #fff;
+    opacity: .3;
+}
+.footer a{
+    color: #777;
+    transition: .3s;
+}
+.footer a:hover{
+    color: #fff;
+}
+.footer__section .list{
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__sections {
+        /* grid-template-columns: repeat(5, 1fr); even though this works but by the time we want to add the other section from our mark up, we shall need to revisit our codes, which is not good, so for a good practice let's we do like the following.*/
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); 
+    }
+
+    .footer .collapsible__right{
+        display: none;
+    }
+
+    .footer .collapsible__content{
+        opacity: 1;
+        max-height: 100%;
+    }
+
+    .footer__brand{
+        /* by default order position value is 0 */
+        order: -1;
+        margin-top: 1rem;
+    }
+
+    .footer__copyright{
+        font-size: 1.5rem;
+    }
+
+    .footer__section {
+        border: 0;
+    }
+    .footer__heading{
+        font-size: 1.6rem;
+    }
+}
